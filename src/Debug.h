@@ -10,6 +10,7 @@
 
 #ifdef DEBUG
     void glCheck(const char* statement, const char* filename, int line);
+    void glVersion();
 
     #define GL_CHECK(statement)\
     {\

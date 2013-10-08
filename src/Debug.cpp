@@ -8,6 +8,9 @@
 
 #ifdef DEBUG
 
+#include "Debug.h"
+#include "OpenGL.h"
+
 void glCheck(const char* statement, const char* filename, int line)
 {
     GLenum error = glGetError();
@@ -17,6 +20,14 @@ void glCheck(const char* statement, const char* filename, int line)
         printf("ERROR: %s\n", gluErrorString(error));
         abort();
     }
+}
+
+void glVersion()
+{
+    printf("%s\n", glGetString(GL_VERSION));
+    printf("%s\n", glGetString(GL_SHADING_LANGUAGE_VERSION));
+    printf("%s\n", glGetString(GL_VENDOR));
+    printf("%s\n", glGetString(GL_RENDERER));
 }
 
 #endif
