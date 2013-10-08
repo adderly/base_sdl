@@ -44,7 +44,7 @@ all: BaseSDL
 BaseSDL: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++  -o "BaseSDL" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L"/home/aaron/repositories/BaseSDL/lib/sdl2/linux" -o "BaseSDL" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
