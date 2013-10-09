@@ -12,8 +12,8 @@ DEFINE_SINGLETON_FUNCTIONS(SDLWindowManager);
 
 const int RESOLUTION_X = 1280;
 const int RESOLUTION_Y = 720;
-const int GL_VERSION_MAJOR = 3;
-const int GL_VERSION_MINOR = 2;
+const int GL_VERSION_MAJOR = 2;
+const int GL_VERSION_MINOR = 3;
 
 SDLWindowManager::SDLWindowManager()
 {
@@ -59,6 +59,8 @@ bool SDLWindowManager::createWindow()
 
     GL_CHECK(glEnable(GL_BLEND));
     GL_CHECK(glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA));
+
+    glVersion();
 
     return true;
 }

@@ -17,11 +17,6 @@
 #include "OpenGL.h"
 #include "Singleton.h"
 
-// Define nullptr as simply 0 for non-C++11 compilers
-#if __cplusplus <= 199711L
-  #define nullptr 0
-#endif
-
 // types for time
 typedef float seconds_t;
 typedef unsigned int milliseconds_t;
