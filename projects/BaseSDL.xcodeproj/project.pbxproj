@@ -13,6 +13,7 @@
 		93AF5FA81804D63E001172C0 /* SDLWindowManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93AF5FA31804D63E001172C0 /* SDLWindowManager.cpp */; };
 		93AF5FAA1804D65B001172C0 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AF5FA91804D65B001172C0 /* SDL2.framework */; };
 		93AF5FAB1804D663001172C0 /* SDL2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 93AF5FA91804D65B001172C0 /* SDL2.framework */; };
+		93AF5FAF1804D71D001172C0 /* assets in CopyFiles */ = {isa = PBXBuildFile; fileRef = 93AF5FAC1804D6B0001172C0 /* assets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +24,16 @@
 			dstSubfolderSpec = 10;
 			files = (
 				93AF5FAB1804D663001172C0 /* SDL2.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93AF5FAE1804D6EE001172C0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				93AF5FAF1804D71D001172C0 /* assets in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +52,7 @@
 		93AF5FA41804D63E001172C0 /* SDLWindowManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLWindowManager.h; sourceTree = "<group>"; };
 		93AF5FA51804D63E001172C0 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		93AF5FA91804D65B001172C0 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../lib/sdl2/osx/SDL2.framework; sourceTree = "<group>"; };
+		93AF5FAC1804D6B0001172C0 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../assets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,7 @@
 		933CECDB1804A37A0022EBDD = {
 			isa = PBXGroup;
 			children = (
+				93AF5FAC1804D6B0001172C0 /* assets */,
 				93AF5F9C1804D63E001172C0 /* src */,
 				93AF5F971804A42E001172C0 /* lib */,
 				933CECE51804A37A0022EBDD /* Products */,
@@ -109,6 +122,8 @@
 				933CECE01804A37A0022EBDD /* Sources */,
 				933CECE11804A37A0022EBDD /* Frameworks */,
 				933CECE21804A37A0022EBDD /* CopyFiles */,
+				93AF5FAD1804D6E6001172C0 /* ShellScript */,
+				93AF5FAE1804D6EE001172C0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -144,6 +159,22 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		93AF5FAD1804D6E6001172C0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/tcsh;
+			shellScript = "touch -cm ${SRCROOT}/../assets";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		933CECE01804A37A0022EBDD /* Sources */ = {
