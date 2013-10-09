@@ -3,3 +3,5 @@
 *.suo
 bin/
 intermediate/
+Debug/
+Release/

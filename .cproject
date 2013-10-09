@@ -26,8 +26,8 @@
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1645938421" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
 								</option>
-								<option id="gnu.cpp.compiler.option.include.paths.979588453" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/BaseSDL/lib/sdl2/include}&quot;"/>
+								<option id="gnu.cpp.compiler.option.include.paths.979588453" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/BaseSDL/lib/sdl2/linux/include}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.997323714" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
@@ -46,7 +46,7 @@
 									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="GLU"/>
 									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="SDL2"/>
 								</option>
-								<option id="gnu.cpp.link.option.paths.488587775" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+								<option id="gnu.cpp.link.option.paths.488587775" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/BaseSDL/lib/sdl2/linux}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1430294827" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
