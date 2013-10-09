@@ -8,9 +8,10 @@
 
 #pragma once
 
+void glCheck(const char* statement, const char* filename, int line);
+void glVersion();
+
 #ifdef DEBUG
-    void glCheck(const char* statement, const char* filename, int line);
-    void glVersion();
 
     #define GL_CHECK(statement)\
     {\

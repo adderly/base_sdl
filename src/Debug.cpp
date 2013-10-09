@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 Aaron Dale. All rights reserved.
 //
 
-#ifdef DEBUG
-
 #include <iostream>
 #include "Debug.h"
 #include "OpenGL.h"
@@ -30,5 +28,3 @@ void glVersion()
     std::cout << glGetString(GL_VENDOR) << std::endl;
     std::cout << glGetString(GL_RENDERER) << std::endl;
 }
-
-#endif
