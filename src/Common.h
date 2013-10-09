@@ -9,6 +9,7 @@
 #pragma once
 
 #include <iostream>
+#include <stdio.h>
 #include <assert.h>
 
 #include "Platform.h"
