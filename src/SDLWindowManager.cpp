@@ -48,7 +48,7 @@ bool SDLWindowManager::createWindow()
         return false;
     }
 
-    GL_CHECK(glClearColor(0.1f, 0.1f, 0.1f, 1.0f));
+    GL_CHECK(glClearColor(1.0f, 0.0f, 0.0f, 1.0f));
     GL_CHECK(glClearDepth(1.0f));
 
     GL_CHECK(glEnable(GL_DEPTH_TEST));
