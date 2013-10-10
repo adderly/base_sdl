@@ -32,7 +32,7 @@ bool SDLWindowManager::createWindow()
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, GL_VERSION_MAJOR);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, GL_VERSION_MINOR);
 
-    _window = SDL_CreateWindow("SkyOS", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, RESOLUTION_X, RESOLUTION_Y, SDL_WINDOW_SHOWN | SDL_WINDOW_OPENGL);
+    _window = SDL_CreateWindow("Base SDL", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, RESOLUTION_X, RESOLUTION_Y, SDL_WINDOW_SHOWN | SDL_WINDOW_OPENGL);
     if(_window == nullptr)
     {
         std::cerr << "Failed to create SDL window:" << std::endl;
